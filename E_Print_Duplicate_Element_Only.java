@@ -1,0 +1,20 @@
+package B_Array_Programs;
+
+public class E_Print_Duplicate_Element_Only {
+
+	public static void main(String[] args) {
+		int arr []= new int [] {3,5,3,5,4};
+		
+		System.out.println("Duplicate elements in given Array :");
+
+		for (int i=0; i<arr.length;i++) {
+			for (int j=i+1; j<arr.length;j++) {
+				if (arr[i]==arr[j]) {
+					System.out.println(arr[j]);
+				}
+			}
+		}
+
+	}
+
+}
